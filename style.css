@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 35px 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #302c48;
+    background: linear-gradient(135deg, #f1efff, #f9f7ff);
+}
+
+.container {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #ebe7f8;
+    border-radius: 20px;
+    box-shadow: 0 14px 40px rgba(83, 68, 140, 0.10);
+}
+
+header {
+    padding: 32px 22px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #6958b8, #9181dc);
+    border-radius: 15px;
+}
+
+.eyebrow {
+    margin-bottom: 12px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    opacity: 0.85;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: clamp(26px, 5vw, 35px);
+}
+
+header p:last-child {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.welcome {
+    margin: 24px 0;
+    padding: 21px;
+    background: #f0edff;
+    border: 1px solid #e5dfff;
+    border-radius: 12px;
+}
+
+.welcome h2 {
+    margin-bottom: 8px;
+    color: #5e4eaa;
+}
+
+.welcome p, .helper, .progress-message {
+    color: #77728e;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.section {
+    margin: 27px 0;
+}
+
+.section h2 {
+    margin-bottom: 14px;
+    color: #5e4eaa;
+    font-size: 19px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.tag {
+    padding: 7px 11px;
+    color: #6554ad;
+    background: #f0edff;
+    border-radius: 20px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.schedule-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 9px 0;
+    padding: 15px;
+    background: #faf9ff;
+    border: 1px solid #f0edfa;
+    border-radius: 9px;
+}
+
+.schedule-item time {
+    min-width: 85px;
+    color: #7464bd;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.schedule-item > span:nth-child(2) {
+    flex: 1;
+    font-size: 14px;
+}
+
+.subject-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.blue { background: #6b9de8; }
+.purple { background: #9684dc; }
+.pink { background: #e49bbd; }
+.green { background: #77b99b; }
+
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.subject-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 17px;
+    border-radius: 10px;
+}
+
+.subject-card span {
+    font-size: 11px;
+    opacity: 0.75;
+}
+
+.subject-card strong {
+    font-size: 14px;
+}
+
+.blue-card { background: #edf4ff; color: #426fae; }
+.purple-card { background: #f1edff; color: #6958b8; }
+.pink-card { background: #fff0f6; color: #ad6487; }
+.green-card { background: #edf8f2; color: #4c9271; }
+
+.helper {
+    margin-top: -7px;
+    margin-bottom: 12px;
+}
+
+.progress-track {
+    height: 10px;
+    margin: 12px 0 8px;
+    overflow: hidden;
+    background: #ece8f8;
+    border-radius: 20px;
+}
+
+.progress-fill {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #7765c7, #a092e5);
+    border-radius: 20px;
+    transition: width 0.25s ease;
+}
+
+.progress-message {
+    margin-bottom: 13px;
+    text-align: right;
+}
+
+.assignment {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin: 8px 0;
+    padding: 14px;
+    background: #faf9ff;
+    border: 1px solid #f0edfa;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.assignment input {
+    width: 17px;
+    height: 17px;
+    accent-color: #7765c7;
+    cursor: pointer;
+}
+
+.assignment span {
+    font-size: 14px;
+}
+
+.assignment input:checked + span {
+    color: #918ba5;
+    text-decoration: line-through;
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 18px;
+    color: #928da5;
+    border-top: 1px solid #efedf5;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+footer span {
+    padding: 0 5px;
+    color: #7765c7;
+}
+
+@media (max-width: 520px) {
+    body { padding: 15px 10px; }
+    .container { padding: 16px; }
+    header { padding: 26px 14px; }
+    .subjects { grid-template-columns: 1fr; }
+    .schedule-item { gap: 9px; }
+    .schedule-item time { min-width: 75px; }
+}

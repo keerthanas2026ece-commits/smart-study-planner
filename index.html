@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p class="eyebrow">PLAN • LEARN • ACHIEVE</p>
+            <h1>Smart Study Planner</h1>
+            <p>Organize your studies and make every day count.</p>
+        </header>
+
+        <section class="welcome">
+            <h2 id="greeting">Welcome, Student!</h2>
+            <p>Make today productive. One focused step at a time.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>Daily Study Timetable</h2>
+                <span class="tag">My schedule</span>
+            </div>
+            <div class="schedule-item">
+                <time>09:00 AM</time><span>Mathematics</span><span class="subject-dot blue"></span>
+            </div>
+            <div class="schedule-item">
+                <time>10:00 AM</time><span>Programming in C++</span><span class="subject-dot purple"></span>
+            </div>
+            <div class="schedule-item">
+                <time>11:00 AM</time><span>Electronics</span><span class="subject-dot pink"></span>
+            </div>
+            <div class="schedule-item">
+                <time>02:00 PM</time><span>English</span><span class="subject-dot green"></span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>My Subjects</h2>
+            <div class="subjects">
+                <div class="subject-card blue-card"><span>01</span><strong>Mathematics</strong></div>
+                <div class="subject-card purple-card"><span>02</span><strong>Programming</strong></div>
+                <div class="subject-card pink-card"><span>03</span><strong>Electronics</strong></div>
+                <div class="subject-card green-card"><span>04</span><strong>English</strong></div>
+            </div>
+        </section>
+
+        <section class="section assignments">
+            <div class="section-heading">
+                <h2>Assignment Checklist</h2>
+                <span class="tag" id="assignment-count">0 / 4 done</span>
+            </div>
+            <p class="helper">Tick an assignment when you finish it.</p>
+
+            <div class="progress-track" role="progressbar"
+                 aria-label="Assignment completion" aria-valuemin="0"
+                 aria-valuemax="100" aria-valuenow="0" id="progress-track">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <p class="progress-message" id="progress-message" aria-live="polite">
+                You have 4 assignments left. You can do it!
+            </p>
+
+            <label class="assignment">
+                <input type="checkbox"><span>Complete Mathematics assignment</span>
+            </label>
+            <label class="assignment">
+                <input type="checkbox"><span>Practice C++ programs</span>
+            </label>
+            <label class="assignment">
+                <input type="checkbox"><span>Prepare Electronics notes</span>
+            </label>
+            <label class="assignment">
+                <input type="checkbox"><span>Complete English record</span>
+            </label>
+        </section>
+
+        <footer>SMART STUDY PLANNER <span>•</span> Study smart, shine bright!</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
